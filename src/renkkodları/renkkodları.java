@@ -11,3 +11,4 @@ public class renkkodları {
     public static final String TUR= "\u001B[36m";
     public static final String B= "\u001B[37m";
 }
+// System.err.println("Yas negatif olamaz");
