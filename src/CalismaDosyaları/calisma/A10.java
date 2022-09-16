@@ -31,6 +31,31 @@ public class A10 {
                 System.out.println("islem icin gecerli bir modul giriniz");
         }
 
+        Scanner scan1=new Scanner(System.in);
+        System.out.println("birinci sayiyi giriniz");
+        double sayi4=scan.nextDouble();
+        System.out.println("ikinci sayiyi giriniz");
+        double sayi5=scan.nextDouble();
+        System.out.println("islem seciniz\n +,-,/,*");
+        String islem1=scan.next();
+
+        switch (islem){
+            case "+":
+                System.out.println("toplam : "+(sayi1+sayi2));
+                break;
+            case "-":
+                System.out.println("fark : "+(sayi1-sayi2));
+                break;
+            case "*":
+                System.out.println("carpim : "+(sayi1*sayi2));
+                break;
+            case"/":
+                System.out.println("bolum: "+(sayi1/sayi2));
+                break;
+
+            default:
+                System.out.println("islem icin gecerli bir modul giriniz");
+        }
 
 
 
