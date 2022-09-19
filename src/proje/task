@@ -1,0 +1,7 @@
+
+
+* Bir radyo projesi olusturacagiz.bu projemizin kullanici ve yonetici girisleri olacak
+*Kullanici girisinde yuklenen radyo kanallarini dinleyip ve listeleyeceğiz.
+*Yonetici girisinde ise yeni radyo kanallari ekleme,eklenen kanallari listeleme
+ve eklenen kanallari silme basamaklari ile ilgili metodlar olusturacagiz..
+*Ve bir de programdan cikis secenegimiz olacak...

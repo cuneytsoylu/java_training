@@ -1,0 +1,80 @@
+package tablo;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class tabmenu {
+
+    public JFrame f; // frame
+    JTabbedPane tab; // tab menu
+    public Label l1, l2, l3, l4, l5;// label
+    public JPanel p1, p2, p3, p4, p5;//paneller
+    public ImageIcon anasayfa, personel, musteri, stok, toptanci;//iconlar
+
+    public tabmenu() { // yapilandiricida tasarladigimiz framenin özelliklerini belirttik
+        f = new JFrame("Ana Ekran");
+        f.setBounds(0, 0, 900, 500);
+        f.setLocation(330, 220);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+    }
+
+    public void calis() {// programi calistirdigimizda baslayacak metod
+
+        tab = new JTabbedPane();//tab menu tanimlanir
+
+        p1 = new JPanel();//tab menü kaç segmeden olusacaksa o kadar panel olusturulur ve tanimlamalari yapilir.
+        p1.setLayout(null);
+        p2 = new JPanel();
+        p2.setLayout(null);
+        p3 = new JPanel();
+        p3.setLayout(null);
+        p4 = new JPanel();
+        p4.setLayout(null);
+        p5 = new JPanel();
+        p5.setLayout(null);
+
+        anasayfa = new ImageIcon("icon_anasayfa.png");//her sekmeye bir icon resmi atiyoruz. Uygun ve istenilen resim verilebilir.
+        tab.addTab("Ana Sayfa", anasayfa, p1);//tab menunün ismini verdik. Ana Sayfa olarak belirledik.
+
+        l1 = new Label("Anasayfa");//tasarima label ekledik. her tabin içinde farkli label olacak ve her labelde o tab menü ile alakali bilgi yazacak
+        l1.setForeground(Color.black);//labeller sayesinde hangi tab da oldugumuzu anlayacagiz.
+        l1.setBounds(425, 125, 125, 25);
+        p1.add(l1);
+
+        personel = new ImageIcon("icon_personel.png");//personel sekmesi
+        tab.addTab("Personel", personel, p2);
+
+        l2 = new Label("personel");//personel sekmesinin labeli
+        l2.setForeground(Color.black);
+        l2.setBounds(425, 125, 125, 25);
+        p2.add(l2);
+
+        musteri = new ImageIcon("icon_musteri.png");//müsteri sekmesi
+        tab.addTab("Müsteri", musteri, p3);
+
+        l3 = new Label("müsteri");//müsteri sekmesinin labeli
+        l3.setForeground(Color.black);
+        l3.setBounds(425, 125, 125, 25);
+        p3.add(l3);
+
+        toptanci = new ImageIcon("icon_toptanci.png");//toptanci sekmesi
+        tab.addTab("Toptanci", toptanci, p4);
+
+        l4 = new Label("toptanci");//toptanci sekmesinin labeli
+        l4.setForeground(Color.black);
+        l4.setBounds(425, 125, 125, 25);
+        p4.add(l4);
+
+        stok = new ImageIcon("icon_stok.png");//stok sekmesi
+        tab.addTab("Stok", stok, p5);
+
+        l5 = new Label("stok bilgileri");//stok sekmesinin labeli
+        l5.setForeground(Color.black);
+        l5.setBounds(425, 125, 125, 25);
+        p5.add(l5);
+
+        f.add(tab);// en son ise frameye tab yüklenir.
+        f.setVisible(true);
+    }
+}
