@@ -2,6 +2,7 @@ package tekrar;
 
 public class Asinifi {
     int m=222;
+
     {
         m=m++;
 
